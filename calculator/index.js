@@ -20,7 +20,7 @@ function clearResult(){
 }
 
 function calculateRes(){
-  inputEl.value = eval(inputEl.value).toFixed(2)
+  inputEl.value =   "I Miss You"//eval(inputEl.value).toFixed(2)
 }
 
 function appendValue(buttonValue){

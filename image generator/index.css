@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 42px;
+  text-shadow: 5px 5px 11px;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+#input {
+  width: 60%;
+  max-width: 400px;
+  padding: 15px 23px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  border-radius: 15px;
+  font-size: 18px;
+  color: #283618;
+  margin-left: 10px;
+}
+
+#btn {
+  padding: 15px 23px;
+  background-color: #e07a5f;
+  color: #fff;
+  border: none;
+  margin-left: 10px;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  letter-spacing: 2px;
+  border-radius: 15px;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#btn:hover {
+  background-color: #81b29a;
+}
+
+.search-result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-res {
+  margin-bottom: 60px;
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+
+}
+
+.search-res:hover img {
+  transform: scale(1.04);
+}
+
+.search-res img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform .3s ease-in-out;
+}
+
+.search-res a {
+  padding: 10px;
+  display: block;
+  color: #343a40;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: background-color .3s ease-in-out;
+}
+
+.search-res:hover a {
+  background-color: #adb5bd;
+}
+
+#show {
+  background-color: #8e7dbe;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: none;
+}
+
+#show:hover {
+  background-color: #5e548e;
+}
+
+@media screen and (max-width: 768px) {
+  .search-res {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-res {
+    width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  #input {
+    margin-bottom: 20px;
+    width: 75%;
+  }
+}
